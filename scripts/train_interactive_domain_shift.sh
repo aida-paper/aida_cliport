@@ -5,7 +5,7 @@
 #####################################
 
 PIER=True
-task="put-block-in-bowl-seen-colors" 
+task="packing-seen-shapes" 
 
 srun python ${AIDA_ROOT}/src/aida_cliport/train_interactive_domain_shift.py \
     iteration=$SLURM_ARRAY_TASK_ID \
