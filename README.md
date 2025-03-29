@@ -121,7 +121,7 @@ Run twice the following, for AIDA is `True` and AIDA is `False`:
 sbatch --array=0-239 scripts/eval_unseen.sh
 ```
 
-Run twice the following, for PIER is `True` and PIER is `False`:
+Run thrice the following, for PIER and FIER is `True`, for PIER is `True` and FIER is `False`, and for PIER is `False` and FIER is `True` :
 ```bash
 sbatch --array=0-9 scripts/train_interactive_domain_shift.sh
 ```
