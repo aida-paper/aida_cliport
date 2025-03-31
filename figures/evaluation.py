@@ -91,7 +91,16 @@ if __name__ == "__main__":
     fig.tight_layout(rect=[0, 0.05, 1, 1])
     handles, labels = ax[0, 0].get_legend_handles_labels()
     fig.legend(handles, labels, loc="lower center", ncol=2, bbox_to_anchor=(0.5, 0))
-    labels = [r"\textbf{A}", r"\textbf{B}", r"\textbf{C}", r"\textbf{D}", r"\textbf{E}", r"\textbf{F}", r"\textbf{G}", r"\textbf{H}"]
+    labels = [
+        r"\textbf{A}",
+        r"\textbf{B}",
+        r"\textbf{C}",
+        r"\textbf{D}",
+        r"\textbf{E}",
+        r"\textbf{F}",
+        r"\textbf{G}",
+        r"\textbf{H}",
+    ]
     for axis, label in zip(ax.flatten(), labels):
         axis.text(-0.1, -0.1, label, fontsize=8, fontweight="bold", transform=axis.transAxes, va="top", ha="right")
         axis.set_xticks([100, 200, 300])

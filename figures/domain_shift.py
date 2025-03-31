@@ -57,7 +57,7 @@ if __name__ == "__main__":
                     n_annotation = 0
                     success = []
                     n_annotation = []
-                    
+
                     stop = False
                     shift1 = False
                     shift2 = False

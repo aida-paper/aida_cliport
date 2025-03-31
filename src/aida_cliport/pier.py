@@ -10,7 +10,7 @@ def prioritize_sampling(u, r, k, b=10, lam=0.5):
     r_copy[np.asarray(r) == aida_cliport.UNKNOWN_RELABELING] = aida_cliport.UNKNOWN_ONLINE
     r_copy[np.asarray(r) == aida_cliport.UNKNOWN_OFFLINE] = aida_cliport.UNKNOWN_ONLINE
 
-    l = lam * u + (1 - lam) * (np.max(k_copy) - k_copy)
-    p = 1 - r_copy * (b ** (1 - l) - 1) / (b - 1)
+    c = lam * u + (1 - lam) * (np.max(k_copy) - k_copy)
+    p = 1 - r_copy * (b ** (1 - c) - 1) / (b - 1)
     p[np.isnan(p)] = 1
     return p
