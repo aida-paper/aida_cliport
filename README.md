@@ -52,7 +52,7 @@ uv pip install -e .
 Download the Google objects:
 
 ```bash
-python scripts/google_objects_download.sh
+./scripts/google_objects_download.sh
 ```
 
 
